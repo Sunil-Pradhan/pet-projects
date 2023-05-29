@@ -4,11 +4,31 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="style.css">
 	<title>Pass the Message</title>
 </head>
 
 <body>
+	<div class="container">
+		<div class="message">
+			<h3>Pass the message</h3>
+			<p class="bdr-btm"></p>
+			<p>
+				<label for="message-input">Enter a message</label>
+				<br />
+				<button><i class="fa-regular fa-envelope"></i></button>
+				<input id="message-input" type="text">
+			</p>
+			<p>
+				<button onclick="getMessage()">Submit</button>
+			</p>
+			<p id="message-output"></p>
+		</div>
+	</div>
+
 
 	<script src="main.js"></script>
 </body>
