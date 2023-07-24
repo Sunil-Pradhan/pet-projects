@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background: orange;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.groceries {
+	width: 600px;
+	min-height: 100vh;
+	background: #fff;
+	box-shadow: 10px 10px 24px 0 rgba(0, 0, 0, 0.5);
+
+}
+
+.groceries h1 {
+	font-size: 2.5rem;
+	margin-top: 1em;
+}
+
+.groceries i {
+	font-size: 2rem;
+	color: orange;
+}
+
+.groceries input {
+	font-family: inherit;
+	outline: 0;
+	border: 0;
+
+}
