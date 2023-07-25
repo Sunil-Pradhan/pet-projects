@@ -44,4 +44,33 @@ body {
 	outline: none;
 	cursor: pointer;
 	border: 1px solid lightgray;
+	border-radius: 5px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	background-color: whitesmoke;
+}
+
+.calculator button:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+#quality {
+	width: 100%;
+	padding: 8px;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid lightgray;
+}
+
+#tip-amount {
+	visibility: hidden;
+	min-width: 250px;
+	margin: auto;
+	background-color: limegreen;
+	color: white;
+	bottom: 30px;
+	text-align: center;
+	border-radius: 2px;
+	padding: 16px;
+	position: fixed;
 }
