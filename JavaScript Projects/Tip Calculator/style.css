@@ -74,3 +74,48 @@ body {
 	padding: 16px;
 	position: fixed;
 }
+
+#tip-amount.show {
+	visibility: visible;
+	animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+	from {
+		bottom: 0;
+		opacity: 0;
+	}
+
+	to {
+		bottom: 30px;
+		opacity: 1;
+	}
+}
+
+@keyframes fadeout {
+	from {
+		bottom: 30px;
+		opacity: 1;
+	}
+
+	to {
+		bottom: 0;
+		opacity: 0;
+	}
+}
+
+@media(max-width:480px) {
+	.calculator input {
+		width: 85%;
+	}
+
+	.calculator button {
+		width: 15%;
+	}
+}
+
+@media(max-width:480px) {
+	.calculator input {
+		width: 80%;
+	}
+}
