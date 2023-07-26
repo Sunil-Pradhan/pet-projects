@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+body {
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 2px;
+	padding: 20px;
+	font-size: 22px;
+	background-color: black;
+	color: #00FFFF;
+	text-shadow: 0 0 10px #00FFFF;
+}
+
+span {
+	animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
+}
