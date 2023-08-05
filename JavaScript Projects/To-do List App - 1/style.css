@@ -12,7 +12,6 @@ body {
 }
 
 .container {
-	border: 1px solid black;
 	width: 95%;
 	margin: auto;
 }
@@ -30,7 +29,6 @@ body {
 }
 
 .user-input {
-	border: 1px solid #000;
 	width: 450px;
 	text-align: center;
 }
@@ -60,4 +58,70 @@ body {
 	border: 1px solid lightgray;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
+}
+
+.user-input button:hover {
+	background-color: transparent;
+	color: #fff;
+}
+
+.to-do-items {
+	width: 500px;
+	margin: auto;
+}
+
+.item {
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: auto;
+	border-radius: 2px;
+	padding: 16px;
+	color: #454545;
+	margin-top: 10px;
+	font-size: 1rem;
+	text-transform: uppercase;
+	transition: all 0.30s ease-in-out;
+}
+
+.item:hover {
+	box-shadow: 0 0 20px #e22865;
+	border: 1px solid #e22865;
+}
+
+.item i {
+	cursor: pointer;
+	margin: 0 5px;
+}
+
+@media(max-width:768px) {
+	.nav {
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.nav h2 {
+		margin: 10px 0;
+	}
+
+	.user-input {
+		width: 100%;
+	}
+
+	.to-do-items {
+		width: 100%;
+	}
+}
+
+@media(max-width:480px) {
+	.user-input input {
+		width: 74%;
+	}
+}
+
+@media(max-width:320px) {
+	.user-input input {
+		width: 60%;
+	}
 }
