@@ -5,10 +5,30 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 	<title>JavaScript Form Validation</title>
 </head>
 
 <body>
+	<div class="container">
+		<form id="form">
+			<div class="title">Get Started</div>
+
+			<div>
+				<!-- User name input -->
+				<label for="username">Name</label>
+				<i class="fas fa-user"></i>
+
+				<input type="text" name="username" id="username" placeholder="Sunil Pradhan">
+				<i class="fas fa-exclamation-circle failure-icon"></i>
+				<i class="far fa-check-circle success-icon"></i>
+
+				<div class="error"></div>
+			</div>
+				<div></div>
+				<div></div>
+		</form>
+	</div>
 
 	<script src="main.js"></script>
 </body>
