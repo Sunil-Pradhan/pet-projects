@@ -13,6 +13,11 @@ body {
 	font-family: sans-serif;
 }
 
+.container {
+	display: flex;
+	flex-direction: row;
+}
+
 form {
 	display: flex;
 	flex-direction: column;
@@ -102,5 +107,110 @@ button {
 }
 
 button:hover {
-  opacity: 0.8;
+	opacity: 0.8;
+}
+
+
+/**
+* ! style rules for social section
+**/
+
+.btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 15px;
+}
+
+
+.btn-1,
+.btn-2 {
+	padding: 10px 5px;
+	width: 100%;
+	display: flex;
+	gap: 15px;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #c4c4c4;
+	border-radius: 8px;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}
+
+.btn-2 {
+	background-color: #4f70b5;
+	color: white;
+}
+
+.or {
+	text-align: center;
+}
+
+.question {
+	font-size: 15px;
+}
+
+span {
+	color: #f2796e;
+	cursor: pointer;
+}
+
+
+/**
+* ! style rules for content section
+**/
+
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: #f2796e;
+	width: 55%;
+	min-height: 100vh;
+	padding: 10px 20px;
+}
+
+form {
+	width: 45%;
+	max-width: none;
+}
+
+.image {
+	background-image: url("https://svgshare.com/i/wTY.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 65%;
+}
+
+.text {
+	text-align: center;
+	color: white;
+	font-size: 18px;
+}
+
+
+@media (max-width: 900px) {
+	.container {
+		flex-direction: column;
+	}
+
+	form,
+	.content {
+		width: 100%;
+	}
+
+	.btn {
+		flex-direction: column;
+	}
+
+	.image {
+		height: 70vh;
+	}
+}
+
+@media (max-width: 425px) {
+	form {
+		padding: 20px;
+	}
 }
